@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Jot.</title>
+      <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+      <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+      <header>
+        <h1 id='title'>Jot.</h1>
+      </header>
+      <div class="container">
+        <div id="palette" class="child"><i class="fas fa-palette fa-2x"></i></div>
+        <div id="eraser" onclick="clearCanvas()" class="child"><i class="fas fa-eraser fa-2x"></i></div>
+        <div id="settings" class="child"><i class="fas fa-cog fa-2x"></i></div>
+      </div>
+      <canvas id='draw' ></canvas>
+      <p id="display"></p>
+      <script src="./draw.js"></script>
+    </body>
+  </html>

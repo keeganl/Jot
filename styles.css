@@ -1,0 +1,38 @@
+body {
+  font-family: 'Marck Script', sans-serif;
+  background-color: lightyellow;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#title {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+#canvas {
+  width: 100%;
+  height: 500px;
+}
+
+#palette:hover {
+  transition: 0.3s;
+  color: grey;
+}
+
+#eraser:hover {
+  transition: 0.3s;
+  color: grey;
+}
+
+#settings:hover {
+  transition: 0.3s;
+  color: grey;
+}
+

@@ -1,0 +1,20 @@
+{
+  "name": "jot",
+  "version": "0.0.1",
+  "description": "A scratchpad ",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Keegan Lawley",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.3",
+    "electron-packager": "^12.2.0"
+  },
+  "dependencies": {
+    "menubar": "^5.2.3",
+    "paper": "^0.11.5"
+  }
+}
