@@ -3,7 +3,7 @@ const menubar = require('menubar')
 var mb = menubar()
 mb.setOption('width', 1000)
 mb.setOption('height', 600)
-mb.setOption('icon', 'icon.png')
+mb.setOption('icon', './assets/icon.png')
 
 
   // Keep a global reference of the window object, if you don't, the window will

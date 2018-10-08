@@ -13,8 +13,20 @@
         <h1 id='title'>Jot.</h1>
       </header>
       <div class="container">
-        <div id="palette" class="child"><i class="fas fa-palette fa-2x"></i></div>
-        <div id="eraser" onclick="clearCanvas()" class="child"><i class="fas fa-eraser fa-2x"></i></div>
+        <div class="dropdown">
+          <div id="palette" class="dropbtn child"><i class="fas fa-palette fa-2x"></i></div>
+          <div id="myDropdown" class="dropdown-content">
+            <a id="red" href="#"><img src="./assets/red.png" width="30px" height="30px" alt=""></a>
+            <a id="green" href="#"><img src="./assets/green.png" width="30px" height="30px" alt=""></a>
+            <a id="blue" href="#"><img src="./assets/blue.png" width="30px" height="30px" alt=""></a>
+            <a id="orange" href="#"><img src="./assets/orange.png" width="30px" height="30px" alt=""></a>
+            <a id="pink" href="#"><img src="./assets/pink.png" width="30px" height="30px" alt=""></a>
+            <a id="gray" href="#"><img src="./assets/gray.png" width="30px" height="30px" alt=""></a>
+            <a id="black" href="#"><img src="./assets/black.png" width="30px" height="30px" alt=""></a>
+            <a id="white" href="#"><img src="./assets/white.png" width="30px" height="30px" alt=""></a>
+          </div>
+        </div>
+        <div id="eraser"  class="child"><i class="fas fa-eraser fa-2x"></i></div>
         <div id="settings" class="child"><i class="fas fa-cog fa-2x"></i></div>
       </div>
       <canvas id='draw' ></canvas>
