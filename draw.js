@@ -43,9 +43,13 @@ function colorMenu() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function settingsMenu() {
+  document.getElementById("settingsDropdown").classList.toggle("show");
+}
 
 var palette = document.querySelector("#palette");
 var eraser = document.querySelector("#eraser");
+var settings = document.querySelector("#settings");
 
 var red = document.querySelector("#red");
 var green = document.querySelector("#green");
@@ -56,8 +60,9 @@ var gray = document.querySelector("#gray");
 var white = document.querySelector("#white");
 var black = document.querySelector("#black");
 
-eraser.onclick = clearCanvas;
+
 palette.onclick = colorMenu;
+settings.onclick = settingsMenu;
 
 red.onclick = () => {
   ctx.strokeStyle = "#FF4444";
@@ -82,4 +87,10 @@ white.onclick = () => {
 };
 black.onclick = () => {
   ctx.strokeStyle = "#000000";
+};
+
+eraser.onclick = () => {
+  // ctx.lineWidth = 100;
+  ctx.strokeStyle = "#FFFEE1";
+
 };
