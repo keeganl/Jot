@@ -4,9 +4,12 @@
       <meta charset="UTF-8">
       <title>Jot.</title>
       <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+      <link rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
       <link rel="stylesheet" href="./styles.css">
+      <link rel="stylesheet" href="./slider.css">
     </head>
     <body>
       <header>
@@ -27,19 +30,28 @@
           </div>
         </div>
         <div id="eraser"  class="child"><i class="fas fa-eraser fa-2x"></i></div>
-        <div class="dropdown">
-          <div id="settings" class="dropbtn child"><i class="fas fa-cog fa-2x"></i></div>
-          <div id="settingsDropdown" class="dropdown-content">
-            <a id="red" href="#"><img src="./assets/red.png" width="30px" height="30px" alt=""></a>
-            <a id="green" href="#"><img src="./assets/green.png" width="30px" height="30px" alt=""></a>
-            <a id="blue" href="#"><img src="./assets/blue.png" width="30px" height="30px" alt=""></a>
-            <a id="orange" href="#"><img src="./assets/orange.png" width="30px" height="30px" alt=""></a>
-            <a id="pink" href="#"><img src="./assets/pink.png" width="30px" height="30px" alt=""></a>
-            <a id="gray" href="#"><img src="./assets/gray.png" width="30px" height="30px" alt=""></a>
-            <a id="black" href="#"><img src="./assets/black.png" width="30px" height="30px" alt=""></a>
-            <a id="white" href="#"><img src="./assets/white.png" width="30px" height="30px" alt=""></a>
+
+        <div id="myBtn" class="dropbtn child"><i class="fas fa-cog fa-2x"></i></div>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span style="display: none;" class="close">&times;</span>
+              <h2>Settings</h2>
+            </div>
+            <div class="modal-body">
+              <h4>Eraser Size:</h4>
+              <input class="slider" type="range" name="e-slider" id="e-slider" min="1" max="200">
+              <h4>Brush Size:</h4>
+              <input class="slider" type="range" name="b-slider" id="b-slider" min="1" max="200">
+            </div>
           </div>
+        
         </div>
+
       </div>
       <canvas id='draw' ></canvas>
       <script src="./draw.js"></script>
