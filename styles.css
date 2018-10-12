@@ -42,9 +42,9 @@ body {
     cursor: pointer;
 }
 
-.dropbtn:hover, .dropbtn:focus {
+/* .dropbtn:hover, .dropbtn:focus {
 
-}
+} */
 
 .dropdown {
     position: relative;
