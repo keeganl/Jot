@@ -98,7 +98,6 @@ eraser.onclick = () => {
   canvas.classList.add('eraser');
   ctx.lineWidth = 50;
   ctx.strokeStyle = "#FFFEE1";
-
 };
 
 
@@ -128,3 +127,18 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
+
+
+
+// Slider logic
+var eraserSlider = document.querySelector('#e-slider')
+
+function eraserVal() {
+  var val = document.querySelector('#e-slider').innerHTML = val 
+  document.querySelector('#output').innerHTML = val
+  console.log(val);
+}
+
+eraserSlider.oninput = function () {
+  eraserVal();
+};
